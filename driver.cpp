@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-#include "BST.h"
+#include "bst.h"
 
 int main()
 {
