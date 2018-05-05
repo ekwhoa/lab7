@@ -226,8 +226,8 @@ void BST<ItemType>::preorderAux(ostream & out,
 {
     if (subtreeRoot != nullptr)
     {
-        preorderAux(out, subtreeRoot->getLeftChildPtr());    // L operation
         out << subtreeRoot->getItem() << "  ";      // V operation
+		preorderAux(out, subtreeRoot->getLeftChildPtr());    // L operation
         preorderAux(out, subtreeRoot->getRightChildPtr());   // R operation
     }
 }
@@ -240,8 +240,8 @@ void BST<ItemType>::postorderAux(ostream & out,
     if (subtreeRoot != nullptr)
     {
         postorderAux(out, subtreeRoot->getLeftChildPtr());    // L operation
-        out << subtreeRoot->getItem() << "  ";      // V operation
         postorderAux(out, subtreeRoot->getRightChildPtr());   // R operation
+        out << subtreeRoot->getItem() << "  ";      // V operation
     }
 }
 

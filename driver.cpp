@@ -18,6 +18,14 @@ int main()
     cout << "\nInorder Traversal of BST: \n";
     intBST.inorder(cout);
     
+    // Testing preorder
+    cout << "\nPreorder Traversal of BST: \n";
+    intBST.preorder(cout);
+    
+    // Testing postorder
+    cout << "\nPostorder Traversal of BST: \n";
+    intBST.postorder(cout);
+    
     // Testing insert
     cout << "\nNow insert a bunch of integers into the BST."
     "\nTry items not in the BST and some that are in it:\n";
@@ -37,6 +45,18 @@ int main()
     cout << "\nBST " << (intBST.isEmpty() ? "is" : "is not") << " empty\n";
     cout << "Inorder Traversal of BST: \n";
     intBST.inorder(cout);
+    
+    cout << endl;
+    
+    cout << "\nBST " << (intBST.isEmpty() ? "is" : "is not") << " empty\n";
+    cout << "Preorder Traversal of BST: \n";
+    intBST.preorder(cout);
+    
+    cout << endl;
+    
+    cout << "\nBST " << (intBST.isEmpty() ? "is" : "is not") << " empty\n";
+    cout << "Postorder Traversal of BST: \n";
+    intBST.postorder(cout);
     
     cout << endl;
     
@@ -66,6 +86,12 @@ int main()
     }
     cout << "\nInorder Traversal of BST: \n";
     intBST.inorder(cout);
+    cout << endl;
+    cout << "\nPreorder Traversal of BST: \n";
+    intBST.preorder(cout);
+    cout << endl;
+    cout << "\nPostorder Traversal of BST: \n";
+    intBST.postorder(cout);
     cout << endl;
     
 
